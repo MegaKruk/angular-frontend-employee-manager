@@ -73,9 +73,6 @@ export class AppComponent implements OnInit {
 
     public searchEmployees(key: string): void {
         const results: Employee[] = [];
-        // for(let employee of (this.employees || [])) {
-            
-        // }
         this.employees?.forEach((employee) => {
             if(employee.name.toLowerCase().indexOf(key.toLowerCase()) !== -1
             || employee.email.toLowerCase().indexOf(key.toLowerCase()) !== -1
